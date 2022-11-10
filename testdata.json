@@ -1,0 +1,53 @@
+[
+  {
+    "title": "Buy 50 GOOG Stock",
+    "completed": "false",
+    "due": "2022-11-10",
+    "fav": "true",
+    "tags": [
+      "GOOG",
+      "SP500",
+      "Tech"
+    ]
+  },
+  {
+    "title": "Research on Retail Stocks",
+    "completed": "false",
+    "due": "2022-11-11",
+    "fav": "true",
+    "tags": [
+      "GOOG",
+      "Retail",
+      "Research"
+    ]
+  },
+  {
+    "title": "Buy 10 PFE Stock",
+    "completed": "true",
+    "due": "2022-11-08",
+    "tags": [
+      "PFE",
+      "Pharma"
+    ]
+  },
+  {
+    "title": "Buy 5 APPL Stock",
+    "completed": "true",
+    "due": "2022-11-07",
+    "tags": [
+      "APPL",
+      "SP500",
+      "Tech"
+    ]
+  },
+  {
+    "title": "Sell 50 FB Stock",
+    "completed": "false",
+    "due": "2022-11-03",
+    "fav": "true",
+    "tags": [
+      "FB",
+      "Tech"
+    ]
+  }
+]
