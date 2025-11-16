@@ -1,10 +1,26 @@
+/* Modern Custom Theme Variables */
+:root {
+  --primary-color: #2d3748;
+  --secondary-color: #4a5568;
+  --accent-color: #667eea;
+  --accent-hover: #5a67d8;
+  --text-primary: #f7fafc;
+  --text-secondary: #e2e8f0;
+  --background: linear-gradient(135deg, #1a202c 0%, #2d3748 100%);
+  --card-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  --spacing-sm: 0.5rem;
+  --spacing-md: 1rem;
+  --spacing-lg: 1.5rem;
+}
+
 .App {
   text-align: center;
 }
 
 .App-logo {
-  height: 40vmin;
+  height: 80px;
   pointer-events: none;
+  margin-bottom: var(--spacing-md);
 }
 
 @media (prefers-reduced-motion: no-preference) {
@@ -14,18 +30,69 @@
 }
 
 .App-header {
-  background-color: #282c34;
+  background: var(--background);
   min-height: 100vh;
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  padding: var(--spacing-lg);
+  color: var(--text-primary);
+}
+
+.App-header p {
+  font-size: 1rem;
+  color: var(--text-secondary);
+  margin: var(--spacing-md) 0;
+  max-width: 600px;
+  line-height: 1.6;
+}
+
+.App-header code {
+  background-color: var(--secondary-color);
+  padding: 0.25rem 0.5rem;
+  border-radius: 4px;
+  font-size: 0.9rem;
+  color: var(--accent-color);
 }
 
 .App-link {
-  color: #61dafb;
+  color: var(--accent-color);
+  text-decoration: none;
+  font-weight: 500;
+  transition: color 0.2s ease;
+  padding: var(--spacing-sm) var(--spacing-md);
+  border-radius: 4px;
+}
+
+.App-link:hover {
+  color: var(--accent-hover);
+  background-color: rgba(102, 126, 234, 0.1);
+}
+
+.App-header button {
+  background-color: var(--accent-color);
+  color: var(--text-primary);
+  border: none;
+  padding: 0.75rem 1.5rem;
+  font-size: 1rem;
+  font-weight: 500;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-top: var(--spacing-lg);
+  transition: all 0.2s ease;
+  box-shadow: var(--card-shadow);
+}
+
+.App-header button:hover {
+  background-color: var(--accent-hover);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.App-header button:active {
+  transform: translateY(0);
+  box-shadow: var(--card-shadow);
 }
 
 @keyframes App-logo-spin {
